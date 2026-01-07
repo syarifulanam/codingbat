@@ -6,6 +6,7 @@ public class test {
         System.out.println(makeAbba("Hi", "Bye"));
         System.out.println(makeTags("i", "yay"));
         System.out.println(makeOutWord("<<>>", "yay"));
+        System.out.println(withoutEnd("hello"));
 
     }
 
@@ -22,7 +23,10 @@ public class test {
     }
 
     public static String makeOutWord(String out, String word) {
-        return out.substring(0,2) + word + out.substring(2);
+        return out.substring(0, 2) + word + out.substring(2);
     }
 
+    public static String withoutEnd(String str) {
+        return str.substring(1, str.length() - 1);
+    }
 }
