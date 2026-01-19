@@ -1,6 +1,6 @@
 package com.syarifulanam;
 
-public class test {
+public class Test {
     public static void main(String[] args) {
         System.out.println(helloName("Bob"));
         System.out.println(makeAbba("Hi", "Bye"));
@@ -8,6 +8,8 @@ public class test {
         System.out.println(makeOutWord("<<>>", "yay"));
         System.out.println(withoutEnd("hello"));
         System.out.println(comboString("hello", "hi"));
+        System.out.println(nonStart("hello", "there"));
+        System.out.println(left2("Hello"));
 
     }
 
@@ -37,5 +39,13 @@ public class test {
         } else {
             return b + a + b;
         }
+    }
+
+    public static String nonStart(String a, String b) {
+        return a.substring(1) + b.substring(1);
+    }
+
+    public static String left2(String str) {
+        return str.substring(2) + str.substring(0, 2);
     }
 }

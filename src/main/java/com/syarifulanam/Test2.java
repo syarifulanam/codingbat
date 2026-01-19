@@ -1,6 +1,6 @@
 package com.syarifulanam;
 
-public class test2 {
+public class Test2 {
     public static void main(String[] args) {
         System.out.println(firstTwo("Hello"));
         System.out.println(firstTwo("abcdefg"));
